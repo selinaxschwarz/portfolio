@@ -6,6 +6,8 @@ function reply_click(clicked_id){
     element.removeChild(element.firstChild);
     }
     
+    document.getElementById("image").classList.add("w-100");
+
     if (clicked_id == "robo23") {
         document.getElementById("header").innerHTML = "RoboCup 2023";
         document.getElementById("image").src = "img/fotografie_robocup/RoboCup_Kassel-Quali22_vorschau.jpeg";
@@ -95,10 +97,16 @@ function reply_click(clicked_id){
 
     else if (clicked_id == "infos") {
         document.getElementById("header").innerHTML = "hej, ich bin Selina! ";
-        document.getElementById("image").src = "img/";
+        var image = document.getElementById("image");
+        image.classList.remove("w-100");
+        image.classList.add("profil");
+        image.src = "img/profil/1.jpg";
+        document.getElementById("categorie").innerHTML = "";
         document.getElementById("text").innerHTML = "Ich bin Kommunikationsdesign-Studentin im vierten Semester. Schon von klein auf hat mich meine Kreativität sehr geprägt, durch die Oberstufe gebracht und schließlich in diesen kreativen Studiengang befördert. Projekte jeder Art gehe ich kreativ an und lasse mir immer neue Dinge einfallen. Dabei strebe ich ganz nach meinem Motto: Stift in der Hand. Ideen im Kopf. Designerin mit Herz.";
         document.getElementById("footer").innerHTML = "☞ UX/ UI Design, Fotografie, Branding, Konzeption & Editorial ";
-    } else console.log("Error");
+    } 
+    
+    else console.log("Error");
 
 
 
