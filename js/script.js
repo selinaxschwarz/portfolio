@@ -53,7 +53,7 @@ function reply_click(clicked_id){
         imagesDiv.id = "images";
       
         // Hier definierst du den Pfad zum Ordner mit den Bildern
-        var imagesPath = "/img/uxui_cardfolio/";
+        var imagesPath = "./img/uxui_cardfolio/";
       
         // Hier fügst du alle Bilder im Ordner zu dem div-Element hinzu
         for (var i = 1; i <= 26; i++) {
@@ -81,13 +81,13 @@ function reply_click(clicked_id){
         document.getElementById("header").innerHTML = "Die Welt von Morgen";
         document.getElementById("image").src = "/img/weltvmorgen/playful_culture.jpg";
         document.getElementById("categorie").innerHTML = "Editorial";
-        document.getElementById("text").innerHTML = "Im Kurs „Typografie“ des ersten Semesters meines Zweitstudiums entwickeln, konzipieren und gestalten wir ein Buch zur Zukunft. Was kommt auf uns zu? Wie verstehen wir diese Entwicklungen besser? Welche Meinungen gibt es? Wie sind Lösungen möglich? – Grundlage sind die sogenannten „Megatrends“. Wir arbeiten mit Recherche, unseren eigenen Ideen und Fundstücken. Jede Dreier-Gruppe erarbeitet zwei eigene Kurs-Buch-Kapitel, wobei meine Gruppe die Oberthemen „Globalisierung“ und „Wissenskultur“ behandelt. Jede Gruppe gestaltet ihre eigene Seiten typografisch, grafisch und inhaltlich – am Schluss fügen wir die Seiten zu einem großen Buch zusammen.";
+        document.getElementById("text").innerHTML = "Im Kurs „Typografie“ des ersten Semesters meines Zweitstudiums entwickeln, konzipieren und gestalten wir ein Buch zur Zukunft. Was kommt auf uns zu? Wie verstehen wir diese Entwicklungen besser? Welche Meinungen gibt es? Wie sind Lösungen möglich? – Grundlage sind die sogenannten „Megatrends“. Wir arbeiten mit Recherche, unseren eigenen Ideen und Fundstücken. Jede Dreier-Gruppe erarbeitet zwei eigene Kurs-Buch-Kapitel, wobei meine Gruppe die Oberthemen „Globalisierung“ und „Wissenskultur“ behandelt. Jede Gruppe gestaltet ihre eigene Seiten typografisch, grafisch und inhaltlich – am Schluss fügen wir die Seiten zu einem großen Buch zusammen.";
         document.getElementById("footer").innerHTML = "☞ Editorial, Buchgestaltung, Typografie";
     }
 
     else if (clicked_id == "beme") {
         document.getElementById("header").innerHTML = "Be Me";
-        document.getElementById("image").src = "/img/bme/bme.jpg";
+        document.getElementById("image").src = "./img/bme/bme.jpg";
         document.getElementById("categorie").innerHTML = "Branding";
         document.getElementById("text").innerHTML = "Eine Modemarke, die sich für Nachhaltigkeit und faire Produktion einsetzt. DIE Modemarke, die DICH different macht! Entstanden ist die Idee und die Umsetzung des Corporate Designs der Modemarke im 4. Semester zusammen mit zwei Kommilitoninnen an der Hochschule Fulda im Modul „Gestaltung in der Praxis“. Ein halbes Semester hatten wir dazu Zeit uns ein Corporate Design für ein Unternehmen unserer Wahl zu gestalten. Dazu inszenierten wir die Modemarke „Be Me“. <br>" + '<a href="https://www.youtube.com/shorts/lXMQsWrlwoU" target="_blank">Der Werbeclip</a>';
         document.getElementById("footer").innerHTML = "☞ Konzept, Logo, Printprodukte <br> ✌︎ In Zusammenarbeit mit " + '<a href="https://portfolio-melinaschwierzke.webflow.io/" target="_blank">Melina Schwierzke</a>' + " und " + '<a href="https://www.linkedin.com/in/frederike-barth-027171198/" target="_blank">Frederike Barth</a>';
@@ -95,9 +95,11 @@ function reply_click(clicked_id){
 
     else if (clicked_id == "infos") {
         document.getElementById("header").innerHTML = "hej, ich bin Selina! ";
-        document.getElementById("image").src = "/img/";
-        document.getElementById("text").innerHTML = "Ich bin Kommunikationsdesign-Studentin im vierten Semester. Schon von klein auf hat mich meine Kreativität sehr geprägt, durch die Oberstufe gebracht und schließlich in diesen kreativen Studiengang befördert. Projekte jeder Art gehe ich kreativ an und lasse mir immer neue Dinge einfallen. Dabei strebe ich ganz nach meinem Motto: Stift in der Hand. Ideen im Kopf. Designerin mit Herz.";
+        document.getElementById("image").src = "./img/";
+        document.getElementById("text").innerHTML = "Ich bin Kommunikationsdesign-Studentin im vierten Semester. Schon von klein auf hat mich meine Kreativität sehr geprägt, durch die Oberstufe gebracht und schließlich in diesen kreativen Studiengang befördert. Projekte jeder Art gehe ich kreativ an und lasse mir immer neue Dinge einfallen. Dabei strebe ich ganz nach meinem Motto: Stift in der Hand. Ideen im Kopf. Designerin mit Herz.";
         document.getElementById("footer").innerHTML = "☞ UX/ UI Design, Fotografie, Branding, Konzeption & Editorial ";
-    }
+    } else console.log("Error");
+
+
 
 }
