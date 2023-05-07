@@ -38,9 +38,27 @@ function reply_click(clicked_id){
 
     else if (clicked_id == "klimperkasten") {
         document.getElementById("header").innerHTML = "Klimperkasten - Bayrisch Pub";
-        document.getElementById("image").src = "img/branding_pub/klimperkasten_header.jpg";
+        document.getElementById("image").src = "img/branding_pub/header.jpg";
         document.getElementById("categorie").innerHTML = "Branding";
         document.getElementById("text").innerHTML = "Im zwoadn Wohnzimma drifft urgis Ambiantn auf frisch gzapfts Bier und zünftig Burga: Des is Klimperkasten. In Freisingen, Vöttingen können Jung und Alt einen entspannten Abend im gemütlichen Ambiente verbringen und neue Bekanntschaften knüpfen. Essen, Trinken und Events stehen, doch das Corporate Design fehlte. Das Logo war bereits vorhanden, also durfte ich die Farben, Typos und Co. anpacken. Das alles landete auf dem Instagram Account, Flyern und Plakaten. Das Ziel mehr Kunden zu erreichen – vor allem Studierende – ist geglückt: Das urige Ambiente Klimperkasten war bei jeder Veranstaltung ausgebucht. Die Werbung hat viel Zuspruch und Lob bekommen, denn viele sind erst dadurch (wieder) auf den Pub aufmerksam geworden.";
+        
+        // Hier wird ein neues div-Element erstellt, in dem alle Bilder angezeigt werden sollen
+        var imagesDiv = document.createElement("div");
+        imagesDiv.id = "images-pub";
+      
+        // Hier definierst du den Pfad zum Ordner mit den Bildern
+        var imagesPath = "img/branding_pub/";
+      
+        // Hier fügst du alle Bilder im Ordner zu dem div-Element hinzu
+        for (var i = 1; i <= 6; i++) {
+          var image = document.createElement("img");
+          image.src = imagesPath + i + ".jpg";
+          imagesDiv.appendChild(image);
+        }
+      
+        // Hier fügst du das div-Element zu deinem HTML-Code hinzu
+        document.getElementById("image-container").appendChild(imagesDiv);
+
         document.getElementById("footer").innerHTML = "☞ Branding, Corporate Design, Flyer, Plakate, Social Media <br>" + '<a href="https://www.instagram.com/klimperkasten_bayrisch_pub" target="_blank">☺ Klimperkasten – Bayrisch Pub</a>';
     }
 
@@ -93,6 +111,30 @@ function reply_click(clicked_id){
         document.getElementById("categorie").innerHTML = "Branding";
         document.getElementById("text").innerHTML = "Eine Modemarke, die sich für Nachhaltigkeit und faire Produktion einsetzt. DIE Modemarke, die DICH different macht! Entstanden ist die Idee und die Umsetzung des Corporate Designs der Modemarke im 4. Semester zusammen mit zwei Kommilitoninnen an der Hochschule Fulda im Modul „Gestaltung in der Praxis“. Ein halbes Semester hatten wir dazu Zeit uns ein Corporate Design für ein Unternehmen unserer Wahl zu gestalten. Dazu inszenierten wir die Modemarke „Be Me“. <br>" + '<a href="https://www.youtube.com/shorts/lXMQsWrlwoU" target="_blank">Der Werbeclip</a>';
         document.getElementById("footer").innerHTML = "☞ Konzept, Logo, Printprodukte <br> ✌︎ In Zusammenarbeit mit " + '<a href="https://portfolio-melinaschwierzke.webflow.io/" target="_blank">Melina Schwierzke</a>' + " und " + '<a href="https://www.linkedin.com/in/frederike-barth-027171198/" target="_blank">Frederike Barth</a>';
+    }
+
+    else if (clicked_id == "freie-arbeiten") {
+        document.getElementById("header").innerHTML = "Freie Arbeiten";
+        document.getElementById("image").src = "img/freiearbeiten/2.jpg";
+        document.getElementById("categorie").innerHTML = "Diverses";
+        document.getElementById("text").innerHTML = "Arbeiten, die ich in meiner Freizeit erstellt habe ohne Uni-Bezug oder Kundenauftrag.";
+        
+        // Hier wird ein neues div-Element erstellt, in dem alle Bilder angezeigt werden sollen
+        var imagesDiv = document.createElement("div");
+        imagesDiv.id = "images-frei";
+      
+        // Hier definierst du den Pfad zum Ordner mit den Bildern
+        var imagesPath = "img/freiearbeiten/";
+      
+        // Hier fügst du alle Bilder im Ordner zu dem div-Element hinzu
+        for (var i = 1; i <= 5; i++) {
+          var image = document.createElement("img");
+          image.src = imagesPath + i + ".jpg";
+          imagesDiv.appendChild(image);
+        }
+        document.getElementById("image-container").appendChild(imagesDiv);
+        
+        document.getElementById("footer").innerHTML = "☞ ";
     }
 
     else if (clicked_id == "infos") {

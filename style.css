@@ -112,7 +112,7 @@ a:hover {
 }
 
 
-.infoscontact {
+.freiearbeiten, .infoscontact {
     margin: 0;
     padding: 0;
     font-family: "degular-display", sans-serif;
@@ -121,7 +121,7 @@ a:hover {
     font-size: 1.6rem !important;
 }
 
-.infoscontact:hover{
+.freiearbeiten:hover, .infoscontact:hover{
     cursor: pointer;
     color: #7a731d;
     text-decoration: #7a731d underline !important;
@@ -142,12 +142,29 @@ img {
 
 #images-robo23 {
     display: grid;
+    /* grid-template-columns: 1fr 1fr; */
+    column-gap: 10px;
+    row-gap: 10px;
+    /* no space between */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+#images-pub {
+    display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 10px;
     row-gap: 10px;
     /* no space between */
+    /* grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); */
+}
 
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+#images-frei {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 10px;
+    row-gap: 10px;
+    /* no space between */
+    /* grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); */
 }
 
 .profil {
