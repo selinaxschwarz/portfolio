@@ -10,9 +10,9 @@ function reply_click(clicked_id){
 
     if (clicked_id == "robo23") {
         document.getElementById("header").innerHTML = "RoboCup 2023";
-        document.getElementById("image").src = "img/fotografie_robocup/RoboCup_Kassel-Quali22_vorschau.jpeg";
+        document.getElementById("image").src = "img/fotografie_robocup/header.jpeg";
         document.getElementById("categorie").innerHTML = "Fotografie";
-        document.getElementById("text").innerHTML = "Schon das zweite Jahr begleite ich den RoboCup in Kassel fotografisch. Die Motive überlege ich mir immer spontan und in Eigeninitiative. Im Mittelpunkt sollen selbstverständlich die Robotor, die Teams und die Wettkampfbahnen stehen. Durch meine Erfahrungen in den letzten Jahren konnte mein Blick für gute Kompositionen geschult werden.";
+        document.getElementById("text").innerHTML = "Schon das dritte Jahr begleite ich den RoboCup in Kassel fotografisch. Die Motive überlege ich mir immer spontan und in Eigeninitiative. Im Mittelpunkt sollen selbstverständlich die Robotor, die Teams und die Wettkampfbahnen stehen. Durch meine Erfahrungen in den letzten Jahren konnte mein Blick für gute Kompositionen geschult werden.";
         
         // Hier wird ein neues div-Element erstellt, in dem alle Bilder angezeigt werden sollen
         var imagesDiv = document.createElement("div");
@@ -64,7 +64,7 @@ function reply_click(clicked_id){
 
     else if (clicked_id == "cardfolio") {
         document.getElementById("header").innerHTML = "Cardfolio";
-        document.getElementById("image").src = "img/uxui_cardfolio/26.jpg";
+        document.getElementById("image").src = "img/uxui_cardfolio/header.jpg";
         document.getElementById("categorie").innerHTML = "UX/ UI Design";
         document.getElementById("text").innerHTML = "Dieser App-Prototyp entstand innerhalb des 3.Semesters im Kurs „(User) Experience Design“ basierend auf den Basics des UX-Designs und der Aufgabe einen Prototypen einer App/ Webseite für Designerinnen zu designen. <br> <br> Die App “Cardfolio” unterstützt den User dabei kreative Arbeiten für das eigene Portfolio zu erstellen, in dem der User wöchentliche Designaufgaben gestellt bekommt. Abschließend kann das Design in Form einer Spielkarte gespeichert werden. Durch das Abschließen der wöchentlichen Aufgabe und das Teilen mit der Community erhält der User Zugriff auf die Designs der Community. Dadurch ist es möglich neue Impulse und Inspiration zu der gleichen Aufgabe zu bekommen – ohne, dass der User davor beeinflusst wurde. <br> <br> Folgend mein Prozess in Form einer Case-Study.";
       
@@ -115,9 +115,9 @@ function reply_click(clicked_id){
 
     else if (clicked_id == "weltvmorgen") {
         document.getElementById("header").innerHTML = "Die Welt von Morgen";
-        document.getElementById("image").src = "img/weltvmorgen/playful_culture.jpg";
+        document.getElementById("image").src = "img/weltvmorgen/welt_von_morgen.gif";
         document.getElementById("categorie").innerHTML = "Editorial";
-        document.getElementById("text").innerHTML = "Im Kurs „Typografie“ des ersten Semesters meines Zweitstudiums entwickeln, konzipieren und gestalten wir ein Buch zur Zukunft. Was kommt auf uns zu? Wie verstehen wir diese Entwicklungen besser? Welche Meinungen gibt es? Wie sind Lösungen möglich? – Grundlage sind die sogenannten „Megatrends“. Wir arbeiten mit Recherche, unseren eigenen Ideen und Fundstücken. Jede Dreier-Gruppe erarbeitet zwei eigene Kurs-Buch-Kapitel, wobei meine Gruppe die Oberthemen „Globalisierung“ und „Wissenskultur“ behandelt. Jede Gruppe gestaltet ihre eigene Seiten typografisch, grafisch und inhaltlich – am Schluss fügen wir die Seiten zu einem großen Buch zusammen.";
+        document.getElementById("text").innerHTML = "Im Kurs „Typografie“ des ersten Semesters meines Zweitstudiums entwickeln, konzipieren und gestalten wir ein Buch zur Zukunft. Was kommt auf uns zu? Wie verstehen wir diese Entwicklungen besser? Welche Meinungen gibt es? Wie sind Lösungen möglich? – Grundlage sind die sogenannten „Megatrends“. Wir arbeiten mit Recherche, unseren eigenen Ideen und Fundstücken. Jede Dreier-Gruppe erarbeitet zwei eigene Kurs-Buch-Kapitel, wobei meine Gruppe die Oberthemen „Globalisierung“ und „Wissenskultur“ behandelt. Jede Gruppe gestaltet ihre eigene Seiten typografisch, grafisch und inhaltlich – am Schluss fügen wir die Seiten zu einem großen Buch zusammen. Hier zu sehen sind die von mir gestalteten Buchseiten.";
         document.getElementById("footer").innerHTML = "☞ Editorial, Buchgestaltung, Typografie";
     }
 
