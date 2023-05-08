@@ -158,6 +158,16 @@ img {
     /* grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); */
 }
 
+#images-laulo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 10px;
+    row-gap: 10px;
+    /* no space between */
+    /* grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); */
+}
+
+
 #images-frei {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;

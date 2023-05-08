@@ -91,9 +91,25 @@ function reply_click(clicked_id){
 
     else if (clicked_id == "laulo") {
         document.getElementById("header").innerHTML = "Laulo Panadería";
-        document.getElementById("image").src = "img/branding_laulo/laulo.jpg";
+        document.getElementById("image").src = "img/branding_laulo/1.jpg";
         document.getElementById("categorie").innerHTML = "Branding";
         document.getElementById("text").innerHTML = "Eine mexikanische Bäckerei, die deutsches Brot verkauft? Loco! Das ist Laulo Panadería. Die Brote mit deutschen Namen kommt bei Touristen aus aller Welt, sowie bei Einheimischen muy bien an. ¡El mejor pan de México! Was fehlt sind die richtigen Werbemaßnahmen. Das Logo stand bereits, also kümmerte ich mich um die passende Corporate Identity. Dafür entwickelte ich eine Farbpalette, ein Typografiekonzept und Illustrationen. Diese haben ihren Platz final in Plakaten und Social Media Posts gefunden.";
+        // Hier wird ein neues div-Element erstellt, in dem alle Bilder angezeigt werden sollen
+        var imagesDiv = document.createElement("div");
+        imagesDiv.id = "images-laulo";
+      
+        // Hier definierst du den Pfad zum Ordner mit den Bildern
+        var imagesPath = "img/branding_laulo/";
+      
+        // Hier fügst du alle Bilder im Ordner zu dem div-Element hinzu
+        for (var i = 2; i <= 6; i++) {
+          var image = document.createElement("img");
+          image.src = imagesPath + i + ".jpg";
+          imagesDiv.appendChild(image);
+        }
+      
+        // Hier fügst du das div-Element zu deinem HTML-Code hinzu
+        document.getElementById("image-container").appendChild(imagesDiv);
         document.getElementById("footer").innerHTML = "☞ Corporate Identity, Illustration, Plakat, Social Media <br>" + '<a href="https://www.instagram.com/panaderialaulo" target="_blank">☺ Laulo Panadería</a>';
     }
 
@@ -143,9 +159,9 @@ function reply_click(clicked_id){
         image.classList.remove("w-100");
         image.classList.add("profil");
         image.src = "img/profil/1.jpg";
-        document.getElementById("categorie").innerHTML = "";
-        document.getElementById("text").innerHTML = "Ich bin Kommunikationsdesign-Studentin im vierten Semester. Schon von klein auf hat mich meine Kreativität sehr geprägt, durch die Oberstufe gebracht und schließlich in diesen kreativen Studiengang befördert. Projekte jeder Art gehe ich kreativ an und lasse mir immer neue Dinge einfallen. Dabei strebe ich ganz nach meinem Motto: Stift in der Hand. Ideen im Kopf. Designerin mit Herz.";
-        document.getElementById("footer").innerHTML = "☞ UX/ UI Design, Fotografie, Branding, Konzeption & Editorial ";
+        document.getElementById("categorie").innerHTML = "☞ UX/ UI Design, Fotografie, Branding, Konzeption & Editorial";
+        document.getElementById("text").innerHTML = "Ich bin Kommunikationsdesign-Studentin im vierten Semester. Schon von klein auf hat mich meine Kreativität sehr geprägt, durch die Oberstufe gebracht und schließlich in diesen kreativen Studiengang befördert. Projekte jeder Art gehe ich kreativ an und lasse mir immer neue Dinge einfallen. Dabei strebe ich ganz nach meinem Motto: Stift in der Hand. Ideen im Kopf. Designerin mit Herz. <br> <br> Kontakt: schwarz.selina@icloud.com";
+        document.getElementById("footer").innerHTML = "Impressum <br> Selina Schwarz <br> Bretzenheimer Straße 23 <br> 55128 Mainz ";
     } 
     
     else console.log("Error");
