@@ -173,7 +173,7 @@ img {
     grid-template-columns: 1fr 1fr 1fr;
     column-gap: 10px;
     row-gap: 10px;
-    /* no space between */
+    /*  no space between */
     /* grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); */
 }
 
