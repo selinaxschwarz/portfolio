@@ -1,3 +1,24 @@
+window.onload = function() {
+  document.getElementById("header").innerHTML = "Portfolio";
+      var imagesDiv = document.getElementById("imagecontainer");
+      document.getElementById("categorie").innerHTML = "UX/UI Design, Fotografie, Branding";
+      document.getElementById("text").innerHTML = "";
+    
+    
+      // Hier definierst du den Pfad zum Ordner mit den Bildern
+      var imagesPath = "img/start/";
+    
+      // Hier fügst du alle Bilder im Ordner zu dem div-Element hinzu
+      for (var i = 1; i <= 4; i++) {
+        var image = document.createElement("img");
+        image.src = imagesPath + i + ".jpg";
+        imagesDiv.appendChild(image);
+      }
+    
+    
+      document.getElementById("footer").innerHTML = "☞ UX/UI Design, Prototyping, Case Study";
+}
+
 function reply_click(clicked_id){
 
     // Hier wird der Inhalt des Containers mit den Bildern gelöscht
@@ -6,11 +27,36 @@ function reply_click(clicked_id){
     element.removeChild(element.firstChild);
     }
 
-    
+    let elements = document.getElementById("imagecontainer");
+    while (elements.firstChild) {
+    elements.removeChild(elements.firstChild);
+    }
 
+    document.getElementById("image").src = "";
     document.getElementById("image").classList.add("w-100");
 
-    if (clicked_id == "robo23") {
+    if (clicked_id == "index") {
+      document.getElementById("header").innerHTML = "Portfolio";
+      var imagesDiv = document.getElementById("imagecontainer");
+      document.getElementById("categorie").innerHTML = "UX/UI Design, Fotografie, Branding";
+      document.getElementById("text").innerHTML = "";
+    
+    
+      // Hier definierst du den Pfad zum Ordner mit den Bildern
+      var imagesPath = "img/start/";
+    
+      // Hier fügst du alle Bilder im Ordner zu dem div-Element hinzu
+      for (var i = 1; i <= 4; i++) {
+        var image = document.createElement("img");
+        image.src = imagesPath + i + ".jpg";
+        imagesDiv.appendChild(image);
+      }
+    
+    
+      document.getElementById("footer").innerHTML = "☞ UX/UI Design, Prototyping, Case Study";
+    }
+
+    else if (clicked_id == "robo23") {
         document.getElementById("header").innerHTML = "RoboCup 2023";
         document.getElementById("image").src = "img/fotografie_robocup/header.jpeg";
         document.getElementById("categorie").innerHTML = "Fotografie";
@@ -18,22 +64,24 @@ function reply_click(clicked_id){
         
         // Hier wird ein neues div-Element erstellt, in dem alle Bilder angezeigt werden sollen
         var imagesDiv = document.createElement("div");
+        imagesDiv.classList.add("row");
         imagesDiv.id = "images-robo23";
-        
-      
-        // Hier definierst du den Pfad zum Ordner mit den Bildern
         var imagesPath = "img/fotografie_robocup/";
-        
-        // Hier fügst du alle Bilder im Ordner zu dem div-Element hinzu
-        for (var i = 1; i <= 13; i++) {
+        var count = 0;
+
+        for (var i = 1; i <= 3; i++) {
+          var images = document.createElement("div");
+          images.classList.add("col-lg-4", "col-md-12", "mb-4", "mb-lg-0");
+          for(var j = 1; j <= 4; j++) {
             var image = document.createElement("img");
-            image.src = imagesPath + "robocup_junior_finale23-" + i + ".jpg";
-            imagesDiv.appendChild(image);
-        
+            image.src = imagesPath + "robocup_junior_finale23-" + (count + 1) + ".jpg";
+            image.classList.add("w-100", "shadow-1-strong", "rounded", "p-1")
+            images.appendChild(image);
+            count++;
+            console.log(count);
+          }
+          document.getElementById("image-container").appendChild(images);
         }
-      
-        // Hier fügst du das div-Element zu deinem HTML-Code hinzu
-        document.getElementById("image-container").appendChild(imagesDiv);
 
         document.getElementById("footer").innerHTML = "☞ Fotografie, Bildbearbeitung, Videografie, Bildkomposition <br> ✌︎ In Zusammenarbeit mit " + '<a href="https://steckler-alex.de" target="_blank">Alex Steckler</a>';
     }
@@ -70,6 +118,7 @@ function reply_click(clicked_id){
         document.getElementById("categorie").innerHTML = "UX/ UI Design";
         document.getElementById("text").innerHTML = "Dieser App-Prototyp entstand innerhalb des 3.Semesters im Kurs „(User) Experience Design“ basierend auf den Basics des UX-Designs und der Aufgabe einen Prototypen einer App/ Webseite für Designerinnen zu designen. <br> <br> Die App “Cardfolio” unterstützt den User dabei kreative Arbeiten für das eigene Portfolio zu erstellen, in dem der User wöchentliche Designaufgaben gestellt bekommt. Abschließend kann das Design in Form einer Spielkarte gespeichert werden. Durch das Abschließen der wöchentlichen Aufgabe und das Teilen mit der Community erhält der User Zugriff auf die Designs der Community. Dadurch ist es möglich neue Impulse und Inspiration zu der gleichen Aufgabe zu bekommen – ohne, dass der User davor beeinflusst wurde. <br> <br> Folgend mein Prozess in Form einer Case-Study.";
       
+
         // Hier wird ein neues div-Element erstellt, in dem alle Bilder angezeigt werden sollen
         var imagesDiv = document.createElement("div");
         imagesDiv.id = "images";
@@ -92,81 +141,88 @@ function reply_click(clicked_id){
       
 
     else if (clicked_id == "laulo") {
-        document.getElementById("header").innerHTML = "Laulo Panadería";
-        document.getElementById("image").src = "img/branding_laulo/1.jpg";
-        document.getElementById("categorie").innerHTML = "Branding";
-        document.getElementById("text").innerHTML = "Eine mexikanische Bäckerei, die deutsches Brot verkauft? Loco! Das ist Laulo Panadería. Die Brote mit deutschen Namen kommt bei Touristen aus aller Welt, sowie bei Einheimischen muy bien an. ¡El mejor pan de México! Was fehlt sind die richtigen Werbemaßnahmen. Das Logo stand bereits, also kümmerte ich mich um die passende Corporate Identity. Dafür entwickelte ich eine Farbpalette, ein Typografiekonzept und Illustrationen. Diese haben ihren Platz final in Plakaten und Social Media Posts gefunden.";
-        // Hier wird ein neues div-Element erstellt, in dem alle Bilder angezeigt werden sollen
-        var imagesDiv = document.createElement("div");
-        imagesDiv.id = "images-laulo";
-      
-        // Hier definierst du den Pfad zum Ordner mit den Bildern
-        var imagesPath = "img/branding_laulo/";
-      
-        // Hier fügst du alle Bilder im Ordner zu dem div-Element hinzu
-        for (var i = 2; i <= 6; i++) {
-          var image = document.createElement("img");
-          image.src = imagesPath + i + ".jpg";
-          imagesDiv.appendChild(image);
-        }
-      
-        // Hier fügst du das div-Element zu deinem HTML-Code hinzu
-        document.getElementById("image-container").appendChild(imagesDiv);
-        document.getElementById("footer").innerHTML = "☞ Corporate Identity, Illustration, Plakat, Social Media <br>" + '<a href="https://www.instagram.com/panaderialaulo" target="_blank">☺ Laulo Panadería</a>';
+
+      callContents(
+        "Laulo Panadería",
+        "img/branding_laulo/1.jpg",
+        "Branding",
+        "Eine mexikanische Bäckerei, die deutsches Brot verkauft? Loco! Das ist Laulo Panadería. Die Brote mit deutschen Namen kommt bei Touristen aus aller Welt, sowie bei Einheimischen muy bien an. ¡El mejor pan de México! Was fehlt sind die richtigen Werbemaßnahmen. Das Logo stand bereits, also kümmerte ich mich um die passende Corporate Identity. Dafür entwickelte ich eine Farbpalette, ein Typografiekonzept und Illustrationen. Diese haben ihren Platz final in Plakaten und Social Media Posts gefunden.",
+        "☞ Corporate Identity, Illustration, Plakat, Social Media <br>" + '<a href="https://www.instagram.com/panaderialaulo" target="_blank">☺ Laulo Panadería</a>'
+      );
+
+        callImageContainer(6, "img/branding_laulo/");
+
     }
 
     else if (clicked_id == "weltvmorgen") {
-        document.getElementById("header").innerHTML = "Die Welt von Morgen";
-        document.getElementById("image").src = "img/weltvmorgen/welt_von_morgen.gif";
-        document.getElementById("categorie").innerHTML = "Editorial";
-        document.getElementById("text").innerHTML = "Im Kurs „Typografie“ des ersten Semesters meines Zweitstudiums entwickeln, konzipieren und gestalten wir ein Buch zur Zukunft. Was kommt auf uns zu? Wie verstehen wir diese Entwicklungen besser? Welche Meinungen gibt es? Wie sind Lösungen möglich? – Grundlage sind die sogenannten „Megatrends“. Wir arbeiten mit Recherche, unseren eigenen Ideen und Fundstücken. Jede Dreier-Gruppe erarbeitet zwei eigene Kurs-Buch-Kapitel, wobei meine Gruppe die Oberthemen „Globalisierung“ und „Wissenskultur“ behandelt. Jede Gruppe gestaltet ihre eigene Seiten typografisch, grafisch und inhaltlich – am Schluss fügen wir die Seiten zu einem großen Buch zusammen. Hier zu sehen sind die von mir gestalteten Buchseiten.";
-        document.getElementById("footer").innerHTML = "☞ Editorial, Buchgestaltung, Typografie";
+      callContents(
+        "Die Welt von Morgen",
+        "img/weltvmorgen/welt_von_morgen.gif",
+        "Editorial",
+        "Im Kurs „Typografie“ des ersten Semesters meines Zweitstudiums entwickeln, konzipieren und gestalten wir ein Buch zur Zukunft. Was kommt auf uns zu? Wie verstehen wir diese Entwicklungen besser? Welche Meinungen gibt es? Wie sind Lösungen möglich? – Grundlage sind die sogenannten „Megatrends“. Wir arbeiten mit Recherche, unseren eigenen Ideen und Fundstücken. Jede Dreier-Gruppe erarbeitet zwei eigene Kurs-Buch-Kapitel, wobei meine Gruppe die Oberthemen „Globalisierung“ und „Wissenskultur“ behandelt. Jede Gruppe gestaltet ihre eigene Seiten typografisch, grafisch und inhaltlich – am Schluss fügen wir die Seiten zu einem großen Buch zusammen. Hier zu sehen sind die von mir gestalteten Buchseiten.",
+        "☞ Editorial, Buchgestaltung, Typografie"
+      );
     }
 
     else if (clicked_id == "beme") {
-        document.getElementById("header").innerHTML = "Be Me";
-        document.getElementById("image").src = "img/bme/bme.jpg";
-        document.getElementById("categorie").innerHTML = "Branding";
-        document.getElementById("text").innerHTML = "Eine Modemarke, die sich für Nachhaltigkeit und faire Produktion einsetzt. DIE Modemarke, die DICH different macht! Entstanden ist die Idee und die Umsetzung des Corporate Designs der Modemarke im 4. Semester zusammen mit zwei Kommilitoninnen an der Hochschule Fulda im Modul „Gestaltung in der Praxis“. Ein halbes Semester hatten wir dazu Zeit uns ein Corporate Design für ein Unternehmen unserer Wahl zu gestalten. Dazu inszenierten wir die Modemarke „Be Me“. <br>" + '<a href="https://www.youtube.com/shorts/lXMQsWrlwoU" target="_blank">Der Werbeclip</a>';
-        document.getElementById("footer").innerHTML = "☞ Konzept, Logo, Printprodukte <br> ✌︎ In Zusammenarbeit mit " + '<a href="https://portfolio-melinaschwierzke.webflow.io/" target="_blank">Melina Schwierzke</a>' + " und " + '<a href="https://www.linkedin.com/in/frederike-barth-027171198/" target="_blank">Frederike Barth</a>';
+      callContents(
+        "Be Me",
+        "img/bme/bme.jpg",
+        "Branding",
+        "Eine Modemarke, die sich für Nachhaltigkeit und faire Produktion einsetzt. DIE Modemarke, die DICH different macht! Entstanden ist die Idee und die Umsetzung des Corporate Designs der Modemarke im 4. Semester zusammen mit zwei Kommilitoninnen an der Hochschule Fulda im Modul „Gestaltung in der Praxis“. Ein halbes Semester hatten wir dazu Zeit uns ein Corporate Design für ein Unternehmen unserer Wahl zu gestalten. Dazu inszenierten wir die Modemarke „Be Me“. <br>" + '<a href="https://www.youtube.com/shorts/lXMQsWrlwoU" target="_blank">Der Werbeclip</a>',
+        "☞ Konzept, Logo, Printprodukte <br> ✌︎ In Zusammenarbeit mit " + '<a href="https://portfolio-melinaschwierzke.webflow.io/" target="_blank">Melina Schwierzke</a>' + " und " + '<a href="https://www.linkedin.com/in/frederike-barth-027171198/" target="_blank">Frederike Barth</a>'
+      );
     }
 
     else if (clicked_id == "freie-arbeiten") {
-        document.getElementById("header").innerHTML = "Freie Arbeiten";
-        document.getElementById("image").src = "img/freiearbeiten/2.jpg";
-        document.getElementById("categorie").innerHTML = "Diverses";
-        document.getElementById("text").innerHTML = "Arbeiten, die ich in meiner Freizeit erstellt habe ohne Uni-Bezug oder Kundenauftrag.";
-        
-        // Hier wird ein neues div-Element erstellt, in dem alle Bilder angezeigt werden sollen
-        var imagesDiv = document.createElement("div");
-        imagesDiv.id = "images-frei";
-      
-        // Hier definierst du den Pfad zum Ordner mit den Bildern
-        var imagesPath = "img/freiearbeiten/";
-      
-        // Hier fügst du alle Bilder im Ordner zu dem div-Element hinzu
-        for (var i = 1; i <= 5; i++) {
-          var image = document.createElement("img");
-          image.src = imagesPath + i + ".jpg";
-          imagesDiv.appendChild(image);
-        }
-        document.getElementById("image-container").appendChild(imagesDiv);
-        
-        document.getElementById("footer").innerHTML = "☞ ";
+        callContents(
+          "Freie Arbeiten",
+          "img/freiearbeiten/2.jpg",
+          "Diverses",
+          "Arbeiten, die ich in meiner Freizeit erstellt habe ohne Uni-Bezug oder Kundenauftrag.",
+          "☞ "
+        );
+
+        callImageContainer(5, "img/freiearbeiten/", "w-100");
     }
 
     else if (clicked_id == "infos") {
-        document.getElementById("header").innerHTML = "hej, ich bin Selina! ";
-        var image = document.getElementById("image");
-        image.classList.remove("w-100");
-        image.classList.add("profil");
-        image.src = "img/profil/1.jpg";
-        document.getElementById("categorie").innerHTML = "☞ UX/ UI Design, Fotografie, Branding, Konzeption & Editorial";
-        document.getElementById("text").innerHTML = "Ich bin Kommunikationsdesign-Studentin im vierten Semester. Schon von klein auf hat mich meine Kreativität sehr geprägt, durch die Oberstufe gebracht und schließlich in diesen kreativen Studiengang befördert. Projekte jeder Art gehe ich kreativ an und lasse mir immer neue Dinge einfallen. Dabei strebe ich ganz nach meinem Motto: Stift in der Hand. Ideen im Kopf. Designerin mit Herz. <br> <br> Kontakt: " + '<a href="mailto:schwarz.selina@icloud.com?subject=Anfrage/%20Feedback/%20Fragen" target="_blank">schwarz.selina@icloud.com</a>';
-        document.getElementById("footer").innerHTML = "Impressum <br> Angaben gemäß § 5 TMG <br> <br> Selina Schwarz <br> Bretzenheimer Straße 23 <br> 55128 Mainz <br> Kontakt <br> E-Mail: schwarz.selina@icloud.com <br> <br> HAFTUNGSHINWEIS: <br> Trotz sorgfältiger inhaltlicher Kontrolle wird keine Haftung für die Inhalte externer Links übernommen. Für den Inhalt der verlinkten Seiten sind ausschließlich deren Betreiber verantwortlich.";} 
+      callContents(
+        "hej, ich bin Selina!",
+        "",
+        "UX/ UI Design, Fotografie, Branding, Konzeption & Editorial",
+        "Ich bin Kommunikationsdesign-Studentin im vierten Semester. Schon von klein auf hat mich meine Kreativität sehr geprägt, durch die Oberstufe gebracht und schließlich in diesen kreativen Studiengang befördert. Projekte jeder Art gehe ich kreativ an und lasse mir immer neue Dinge einfallen. Dabei strebe ich ganz nach meinem Motto: Stift in der Hand. Ideen im Kopf. Designerin mit Herz. <br> <br> Kontakt: " + '<a href="mailto:schwarz.selina@icloud.com?subject=Anfrage/%20Feedback/%20Fragen" target="_blank">schwarz.selina@icloud.com</a>',
+        "Impressum <br> Angaben gemäß § 5 TMG <br> <br> Selina Schwarz <br> Bretzenheimer Straße 23 <br> 55128 Mainz <br> Kontakt <br> E-Mail: schwarz.selina@icloud.com <br> <br> HAFTUNGSHINWEIS: <br> Trotz sorgfältiger inhaltlicher Kontrolle wird keine Haftung für die Inhalte externer Links übernommen. Für den Inhalt der verlinkten Seiten sind ausschließlich deren Betreiber verantwortlich."
+      );
+
+      
+      var image = document.getElementById("image");
+      image.classList.remove("w-100");
+      image.classList.add("profil");
+      image.src = "img/profil/1.jpg";
+    } 
     
     else console.log("Error");
+}
 
+function callContents(header, image, categorie, text, footer) {
+    document.getElementById("header").innerHTML = header;
+    document.getElementById("image").src = image;
+    document.getElementById("categorie").innerHTML = "☞ " + categorie;
+    document.getElementById("text").innerHTML = text;
+    document.getElementById("footer").innerHTML = footer;
+}
 
+function callImageContainer(num, path, classTag) {
+    var imagesDiv = document.createElement("div");
+    imagesDiv.classList.add("col-12")
+    imagesDiv.id = "images-frei";
 
+    for (var i = 1; i <= num; i++) {
+      var image = document.createElement("img");
+      image.src = path + i + ".jpg";
+      image.classList.add(classTag);
+      imagesDiv.appendChild(image);
+    }
+    document.getElementById("image-container").appendChild(imagesDiv);
 }
