@@ -5,7 +5,9 @@ function reply_click(clicked_id){
     while (element.firstChild) {
     element.removeChild(element.firstChild);
     }
+
     
+
     document.getElementById("image").classList.add("w-100");
 
     if (clicked_id == "robo23") {
@@ -160,9 +162,8 @@ function reply_click(clicked_id){
         image.classList.add("profil");
         image.src = "img/profil/1.jpg";
         document.getElementById("categorie").innerHTML = "☞ UX/ UI Design, Fotografie, Branding, Konzeption & Editorial";
-        document.getElementById("text").innerHTML = "Ich bin Kommunikationsdesign-Studentin im vierten Semester. Schon von klein auf hat mich meine Kreativität sehr geprägt, durch die Oberstufe gebracht und schließlich in diesen kreativen Studiengang befördert. Projekte jeder Art gehe ich kreativ an und lasse mir immer neue Dinge einfallen. Dabei strebe ich ganz nach meinem Motto: Stift in der Hand. Ideen im Kopf. Designerin mit Herz. <br> <br> Kontakt: schwarz.selina@icloud.com";
-        document.getElementById("footer").innerHTML = "Impressum <br> Selina Schwarz <br> Bretzenheimer Straße 23 <br> 55128 Mainz ";
-    } 
+        document.getElementById("text").innerHTML = "Ich bin Kommunikationsdesign-Studentin im vierten Semester. Schon von klein auf hat mich meine Kreativität sehr geprägt, durch die Oberstufe gebracht und schließlich in diesen kreativen Studiengang befördert. Projekte jeder Art gehe ich kreativ an und lasse mir immer neue Dinge einfallen. Dabei strebe ich ganz nach meinem Motto: Stift in der Hand. Ideen im Kopf. Designerin mit Herz. <br> <br> Kontakt: " + '<a href="mailto:schwarz.selina@icloud.com?subject=Anfrage/%20Feedback/%20Fragen" target="_blank">schwarz.selina@icloud.com</a>';
+        document.getElementById("footer").innerHTML = "Impressum <br> Angaben gemäß § 5 TMG <br> <br> Selina Schwarz <br> Bretzenheimer Straße 23 <br> 55128 Mainz <br> Kontakt <br> E-Mail: schwarz.selina@icloud.com <br> <br> HAFTUNGSHINWEIS: <br> Trotz sorgfältiger inhaltlicher Kontrolle wird keine Haftung für die Inhalte externer Links übernommen. Für den Inhalt der verlinkten Seiten sind ausschließlich deren Betreiber verantwortlich.";} 
     
     else console.log("Error");
 
