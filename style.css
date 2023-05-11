@@ -34,12 +34,23 @@ p {
 }
 
 a {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     text-decoration: none !important;
     color: #7a731d !important;
 }
 
 a:hover {
+    cursor: pointer;
+    text-decoration: #7a731d underline !important;
+}
+
+a.social {
+    font-size: 1.2rem;
+    text-decoration: none !important;
+    color: #7a731d !important;
+}
+
+a.social:hover {
     cursor: pointer;
     text-decoration: #7a731d underline !important;
 }
@@ -83,6 +94,10 @@ a:hover {
 /* #image {
     width: 2000px;
     height: 1400px;
+} */
+
+/* .row {
+    --bs-gutter-x: 0 !important;
 } */
 
 .projekt{

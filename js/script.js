@@ -1,7 +1,7 @@
 window.onload = function() {
   document.getElementById("header").innerHTML = "Portfolio";
       var imagesDiv = document.getElementById("imagecontainer");
-      document.getElementById("categorie").innerHTML = "UX/UI Design, Fotografie, Branding";
+      document.getElementById("categorie").innerHTML = "";
       document.getElementById("text").innerHTML = "";
     
     
@@ -16,7 +16,7 @@ window.onload = function() {
       }
     
     
-      document.getElementById("footer").innerHTML = "☞ UX/UI Design, Prototyping, Case Study";
+      document.getElementById("footer").innerHTML = "";
 }
 
 function reply_click(clicked_id){
@@ -83,7 +83,7 @@ function reply_click(clicked_id){
           document.getElementById("image-container").appendChild(images);
         }
 
-        document.getElementById("footer").innerHTML = "☞ Fotografie, Bildbearbeitung, Videografie, Bildkomposition <br> ✌︎ In Zusammenarbeit mit " + '<a href="https://steckler-alex.de" target="_blank">Alex Steckler</a>';
+        document.getElementById("footer").innerHTML = "☞ Fotografie, Bildbearbeitung, Videografie, Bildkomposition <br> ✌︎ In Zusammenarbeit mit " + '<a class="social" href="https://steckler-alex.de" target="_blank">Alex Steckler</a>';
     }
 
     else if (clicked_id == "klimperkasten") {
@@ -169,8 +169,8 @@ function reply_click(clicked_id){
         "Be Me",
         "img/bme/bme.jpg",
         "Branding",
-        "Eine Modemarke, die sich für Nachhaltigkeit und faire Produktion einsetzt. DIE Modemarke, die DICH different macht! Entstanden ist die Idee und die Umsetzung des Corporate Designs der Modemarke im 4. Semester zusammen mit zwei Kommilitoninnen an der Hochschule Fulda im Modul „Gestaltung in der Praxis“. Ein halbes Semester hatten wir dazu Zeit uns ein Corporate Design für ein Unternehmen unserer Wahl zu gestalten. Dazu inszenierten wir die Modemarke „Be Me“. <br>" + '<a href="https://www.youtube.com/shorts/lXMQsWrlwoU" target="_blank">Der Werbeclip</a>',
-        "☞ Konzept, Logo, Printprodukte <br> ✌︎ In Zusammenarbeit mit " + '<a href="https://portfolio-melinaschwierzke.webflow.io/" target="_blank">Melina Schwierzke</a>' + " und " + '<a href="https://www.linkedin.com/in/frederike-barth-027171198/" target="_blank">Frederike Barth</a>'
+        "Eine Modemarke, die sich für Nachhaltigkeit und faire Produktion einsetzt. DIE Modemarke, die DICH different macht! Entstanden ist die Idee und die Umsetzung des Corporate Designs der Modemarke im 4. Semester zusammen mit zwei Kommilitoninnen an der Hochschule Fulda im Modul „Gestaltung in der Praxis“. Ein halbes Semester hatten wir dazu Zeit uns ein Corporate Design für ein Unternehmen unserer Wahl zu gestalten. Dazu inszenierten wir die Modemarke „Be Me“. <br> <br>" + '<a href="https://www.youtube.com/shorts/lXMQsWrlwoU" target="_blank">Der Werbeclip</a>',
+        "☞ Konzept, Logo, Printprodukte <br> ✌︎ In Zusammenarbeit mit " + '<a class="social" href="https://portfolio-melinaschwierzke.webflow.io/" target="_blank">Melina Schwierzke</a>' + " und " + '<a class="social" href="https://www.linkedin.com/in/frederike-barth-027171198/" target="_blank">Frederike Barth</a>'
       );
     }
 
@@ -191,7 +191,7 @@ function reply_click(clicked_id){
         "hej, ich bin Selina!",
         "",
         "UX/ UI Design, Fotografie, Branding, Konzeption & Editorial",
-        "Ich bin Kommunikationsdesign-Studentin im vierten Semester. Schon von klein auf hat mich meine Kreativität sehr geprägt, durch die Oberstufe gebracht und schließlich in diesen kreativen Studiengang befördert. Projekte jeder Art gehe ich kreativ an und lasse mir immer neue Dinge einfallen. Dabei strebe ich ganz nach meinem Motto: Stift in der Hand. Ideen im Kopf. Designerin mit Herz. <br> <br> Kontakt: " + '<a href="mailto:schwarz.selina@icloud.com?subject=Anfrage/%20Feedback/%20Fragen" target="_blank">schwarz.selina@icloud.com</a>',
+        "Komplexe Ideen in kreative Lösungen umwandeln ist meine Leidenschaft als angehende Designerin. Ich bin Selina und studiere Kommunikationsdesign im vierten Semester in Mainz. Im Studium kann ich meiner kreativen Ader in verschiedenen Bereichen wie UX/UI, Fotografie, Branding, Konzeption und Editorial Design nachgehen. Durch die Kombination meiner kreativen Fähigkeiten mit meinem technischen Wissen und meinen Erfahrungen, bin ich in der Lage, wirkungsvolle Designs zu schaffen. In meinem Portfolio ist eine Auswahl meiner Arbeiten, die ich im Rahmen meines Studiums und auch außerhalb davon erstellt habe, zu finden. <br> <br> Kontakt: " + '<a href="mailto:schwarz.selina@icloud.com?subject=Anfrage/%20Feedback/%20Fragen" target="_blank">schwarz.selina@icloud.com</a>',
         "Impressum <br> Angaben gemäß § 5 TMG <br> <br> Selina Schwarz <br> Bretzenheimer Straße 23 <br> 55128 Mainz <br> Kontakt <br> E-Mail: schwarz.selina@icloud.com <br> <br> HAFTUNGSHINWEIS: <br> Trotz sorgfältiger inhaltlicher Kontrolle wird keine Haftung für die Inhalte externer Links übernommen. Für den Inhalt der verlinkten Seiten sind ausschließlich deren Betreiber verantwortlich."
       );
 
