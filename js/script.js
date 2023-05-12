@@ -49,6 +49,7 @@ function reply_click(clicked_id){
       for (var i = 1; i <= 4; i++) {
         var image = document.createElement("img");
         image.src = imagesPath + i + ".jpg";
+        image.classList.add("pb-3");
         imagesDiv.appendChild(image);
       }
     
