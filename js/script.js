@@ -38,7 +38,7 @@ function reply_click(clicked_id){
     if (clicked_id == "index") {
       document.getElementById("header").innerHTML = "Portfolio";
       var imagesDiv = document.getElementById("imagecontainer");
-      document.getElementById("categorie").innerHTML = "UX/UI Design, Fotografie, Branding";
+      document.getElementById("categorie").innerHTML = "";
       document.getElementById("text").innerHTML = "";
     
     
@@ -54,7 +54,7 @@ function reply_click(clicked_id){
       }
     
     
-      document.getElementById("footer").innerHTML = "☞ UX/UI Design, Prototyping, Case Study";
+      document.getElementById("footer").innerHTML = "";
     }
 
     else if (clicked_id == "robo23") {
