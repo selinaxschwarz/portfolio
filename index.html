@@ -25,8 +25,8 @@
         <nav class="col-12 col-xl-4 navbar navbar-expand-xl p-0 justify-content-xl-start align-items-xl-start">
             <div class="col-12 container-fluid d-xl-flex flex-xl-column justify-content-end justify-content-xl-start align-items-xl-start h-100 pb-1">
                 <div class="col-xl-12 col m-0 d-flex flex-row align-items-center pe-0">
-                    <a id="index" onClick="reply_click(this.id)"><img class="logo-img p-0" src="img/logo/logo.png" alt="Logo"></a> 
-                    <a id="index" class="logo ps-1" onClick="reply_click(this.id)">Selina Schwarz</a>
+                    <a data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" id="index" onClick="reply_click(this.id)"><img class="logo-img p-0" src="img/logo/logo.png" alt="Logo"></a> 
+                    <a data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" id="index" class="logo ps-1" onClick="reply_click(this.id)">Selina Schwarz</a>
                 </div>
                 <div class="col-2 d-flex justify-content-end d-xl-none">
                     <button class="navbar-toggler p-0" style="width: 35px;"  type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -37,18 +37,18 @@
                     <div class="d-flex flex-column justify-content-between h-100">
                         <div class="navbar-nav d-flex flex-column">
                             <h2  href="index.html" class="col-12 navbar-brand m-0 pt-3">Ausgewählte Arbeiten</h2>
-                            <a aria-current="page" id="robo23" class="projekt p-0 pt-2 ps-4" onClick="reply_click(this.id)">RoboCup 2023</a>
-                            <a id="klimperkasten" class="projekt p-0 ps-4" onClick="reply_click(this.id)">Klimperkasten</a>
-                            <a id="cardfolio" class="projekt p-0 ps-4" onClick="reply_click(this.id)">Cardfolio</a>
-                            <a id="laulo" class="projekt p-0 ps-4" onClick="reply_click(this.id)">Laulo Panadería</a>
-                            <a id="weltvmorgen" class="projekt p-0 ps-4" onClick="reply_click(this.id)">Die Welt von Morgen</a>
-                            <a id="beme" class="projekt p-0 ps-4" onClick="reply_click(this.id)">Be Me</a>
+                            <a data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-current="page" id="robo23" class="projekt p-0 pt-2 ps-4" onClick="reply_click(this.id)">RoboCup 2023</a>
+                            <a data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" id="klimperkasten" class="projekt p-0 ps-4" onClick="reply_click(this.id)">Klimperkasten</a>
+                            <a data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" id="cardfolio" class="projekt p-0 ps-4" onClick="reply_click(this.id)">Cardfolio</a>
+                            <a data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" id="laulo" class="projekt p-0 ps-4" onClick="reply_click(this.id)">Laulo Panadería</a>
+                            <a data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" id="weltvmorgen" class="projekt p-0 ps-4" onClick="reply_click(this.id)">Die Welt von Morgen</a>
+                            <a data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" id="beme" class="projekt p-0 ps-4" onClick="reply_click(this.id)">Be Me</a>
                         </div>
                         <div class="bd-highlight">
-                            <div id="freie-arbeiten" class="freiearbeiten mt-auto p-2 bd-highlight" onClick="reply_click(this.id)">Freie Arbeiten</div>
+                            <div id="freie-arbeiten" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" class="freiearbeiten mt-auto p-2 bd-highlight" onClick="reply_click(this.id)">Freie Arbeiten</div>
                         </div>
-                        <div class="bd-highlight">
-                            <div id="infos" class="infoscontact mt-auto p-2 bd-highlight" onClick="reply_click(this.id)">✌︎ Infos & Kontakt</div>
+                        <div class="bd-highlight pb-4">
+                            <div id="infos" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" class="infoscontact mt-auto p-2 bd-highlight" onClick="reply_click(this.id)">✌︎ Infos & Kontakt</div>
                         </div>
                     </div>
                 </div>
@@ -57,22 +57,26 @@
 
         <div class="projekt_description col-12 col-xl-8 d-flex flex-column row m-0 p-0 overflow-scroll">
             <div class="col-12 d-flex flex-xl-row justify-content-xl-between align-items-center flex-column-reverse"> 
-                <div class="col-5 d-flex justify-content-center justify-content-xl-start m-0 p-0">
+                <div class="col-12 d-flex justify-content-center justify-content-xl-start m-0 p-0">
                     <span id="header" class="text-center">Portfolio</span>
                 </div>
                 <hr class="d-xl-none border border-dark w-100 p-0 m-0">
+                <!--
                 <div class="col-7 d-xl-flex flex-row justify-content-end pe-md-4 align-items-center d-none">
                     <a class="col-3 text-center social" href="https://www.behance.net/selinaschwarz2" target="_blank">Behance</a>
                     <a class="col-3 text-center social" href="https://instagram.com/blackxpictures" target="_blank">Instagram</a>
                     <a class="col-3 text-center social" href="https://dribbble.com/selinaxschwarz" target="_blank">Dribbble</a>
                 </div>
+                -->
             </div>
             <div style="height: 95vh" class="col-12 d-flex flex-column m-0 overflow-scroll p-0 pb-4 ">
 
-                <img id="image" src="" class="p-0 pe-xl-4 pt-0"></img>
+                <div class="d-flex justify-content-center justify-content-xl-start">
+                    <img id="image" src="" class="p-0 pe-xl-4 pt-0"></img>
+                </div>
                 <div id="imagecontainer" class="p-0 pe-xl-4 pt-0"></div>
 
-                <div class="p-1" id="categorie"></div>
+                <div class="p-1 ps-4" id="categorie"></div>
                 <div class="p-4 p-xl-0 pe-xl-4" id="text"></div>
 
                 
@@ -82,10 +86,12 @@
                 
             </div>
         </div>
-        <div class="col-8 d-flex flex-row justify-content-between pe-md-4 align-items-center d-xl-none w-100 p-1">
-            <a class="col-3 text-center social" href="https://www.behance.net/selinaschwarz2" target="_blank">Behance</a>
-            <a class="col-3 text-center social" href="https://instagram.com/blackxpictures" target="_blank">Instagram</a>
-            <a class="col-3 text-center social" href="https://dribbble.com/selinaxschwarz" target="_blank">Dribbble</a>
+        <div class="col-12 position-fixed bottom-0 m-0">
+            <div class="d-flex justify-content-center align-items-center w-100 bottom p-1">
+                <a class="p-2 text-center social" href="https://www.behance.net/selinaschwarz2" target="_blank">Behance</a>
+                <a class="p-2 text-center social" href="https://instagram.com/blackxpictures" target="_blank">Instagram</a>
+                <a class="p-2 text-center social" href="https://dribbble.com/selinaxschwarz" target="_blank">Dribbble</a>
+            </div>
         </div>
     </div>
     
