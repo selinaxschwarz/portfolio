@@ -147,7 +147,7 @@ function reply_click(clicked_id){
         "Laulo Panadería",
         "img/branding_laulo/1.jpg",
         "Branding",
-        "Eine mexikanische Bäckerei, die deutsches Brot verkauft? Loco! Das ist Laulo Panadería. Die Brote mit deutschen Namen kommt bei Touristen aus aller Welt, sowie bei Einheimischen muy bien an. ¡El mejor pan de México! Was fehlt sind die richtigen Werbemaßnahmen. Das Logo stand bereits, also kümmerte ich mich um die passende Corporate Identity. Dafür entwickelte ich eine Farbpalette, ein Typografiekonzept und Illustrationen. Diese haben ihren Platz final in Plakaten und Social Media Posts gefunden.",
+        "Eine mexikanische Bäckerei, die deutsches Brot verkauft? Claro! Das ist Laulo Panadería. Die Brote mit deutschen Namen kommen bei Touristen aus aller Welt, sowie bei Einheimischen muy bien an. ¡El mejor pan de México! Was fehlt sind die richtigen Werbemaßnahmen. Das Logo stand bereits, also kümmerte ich mich um die passende Corporate Identity. Dafür entwickelte ich eine Farbpalette, ein Typografiekonzept und Illustrationen. Diese haben ihren Platz final in Plakaten und Social Media Posts gefunden.",
         "☞ Corporate Identity, Illustration, Plakat, Social Media <br>" + '<a href="https://www.instagram.com/panaderialaulo" target="_blank">☺ Laulo Panadería</a>'
       );
 
