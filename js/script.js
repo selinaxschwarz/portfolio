@@ -92,7 +92,7 @@ function reply_click(clicked_id){
         document.getElementById("header").innerHTML = "Klimperkasten - Bayrisch Pub";
         document.getElementById("image").src = "img/branding_pub/header.jpg";
         document.getElementById("categorie").innerHTML = "Branding";
-        document.getElementById("text").innerHTML = "Im zwoadn Wohnzimma drifft urgis Ambiantn auf frisch gzapfts Bier und zünftig Burga: Des is Klimperkasten. In Freisingen, Vöttingen können Jung und Alt einen entspannten Abend im gemütlichen Ambiente verbringen und neue Bekanntschaften knüpfen. Essen, Trinken und Events stehen, doch das Corporate Design fehlte. Das Logo war bereits vorhanden, also durfte ich die Farben, Typos und Co. anpacken. Das alles landete auf dem Instagram Account, Flyern und Plakaten. Das Ziel mehr Kunden zu erreichen – vor allem Studierende – ist geglückt: Das urige Ambiente Klimperkasten war bei jeder Veranstaltung ausgebucht. Die Werbung hat viel Zuspruch und Lob bekommen, denn viele sind erst dadurch (wieder) auf den Pub aufmerksam geworden.";
+        document.getElementById("text").innerHTML = "Im zwoadn Wohnzimma drifft urgis Ambiantn auf frisch gzapfts Bier und zünftig Burga: Des is Klimperkasten. In Freisingen, Vöttingen können Jung und Alt einen entspannten Abend im gemütlichen Ambiente verbringen und neue Bekanntschaften knüpfen. Essen, Trinken und Events stehen, doch das Corporate Design fehlte. Das Logo war bereits vorhanden, also durfte ich die Farben, Typo und Co. anpacken. Das alles landete auf dem Instagram Account, Flyern und Plakaten. Das Ziel mehr Kunden zu erreichen – vor allem Studierende – ist geglückt: Das urige Ambiente Klimperkasten hat mehr Kund*innen angelockt und ist bei jeder Veranstaltung ausgebucht. Die Werbung hat viel Zuspruch und Lob bekommen, denn viele sind erst dadurch (wieder) auf den Pub aufmerksam geworden.";
         
         // Hier wird ein neues div-Element erstellt, in dem alle Bilder angezeigt werden sollen
         var imagesDiv = document.createElement("div");
@@ -182,7 +182,7 @@ function reply_click(clicked_id){
           "img/freiearbeiten/2.jpg",
           "Diverses",
           "Arbeiten, die ich in meiner Freizeit erstellt habe ohne Uni-Bezug oder Kundenauftrag.",
-          "☞ "
+          ""
         );
 
         callImageContainer(5, "img/freiearbeiten/", "w-100");
@@ -192,7 +192,7 @@ function reply_click(clicked_id){
       callContents(
         "hej, ich bin Selina!",
         "",
-        "UX/ UI Design, Fotografie, Branding, Konzeption & Editorial",
+        "☞ UX/ UI Design, Fotografie, Branding, Konzeption & Editorial",
         "Komplexe Ideen in kreative Lösungen umwandeln ist meine Leidenschaft als angehende Designerin. Ich bin Selina und studiere Kommunikationsdesign im vierten Semester in Mainz. Im Studium kann ich meiner kreativen Ader in verschiedenen Bereichen wie UX/UI, Fotografie, Branding, Konzeption und Editorial Design nachgehen. Durch die Kombination meiner kreativen Fähigkeiten mit meinem technischen Wissen und meinen Erfahrungen, bin ich in der Lage, wirkungsvolle Designs zu schaffen. In meinem Portfolio ist eine Auswahl meiner Arbeiten, die ich im Rahmen meines Studiums und auch außerhalb davon erstellt habe, zu finden. <br> <br> Kontakt: " + '<a href="mailto:hej@selinaschwarz.me?subject=Anfrage/%20Feedback/%20Fragen" target="_blank">hej@selinaschwarz.me</a>',
         "<br><br><br><br> Impressum <br> Angaben gemäß § 5 TMG <br> <br> Selina Schwarz <br> Bretzenheimer Straße 23 <br> 55128 Mainz <br><br> Kontakt <br> E-Mail: " + '<a class="social" href="mailto:hej@selinaschwarz.me?subject=Anfrage/%20Feedback/%20Fragen" target="_blank">hej@selinaschwarz.me</a>' + "<br> <br> HAFTUNGSHINWEIS: <br> Trotz sorgfältiger inhaltlicher Kontrolle wird keine Haftung für die Inhalte externer Links übernommen. Für den Inhalt der verlinkten Seiten sind ausschließlich deren Betreiber verantwortlich."
       );
@@ -210,7 +210,7 @@ function reply_click(clicked_id){
 function callContents(header, image, categorie, text, footer) {
     document.getElementById("header").innerHTML = header;
     document.getElementById("image").src = image;
-    document.getElementById("categorie").innerHTML = "☞ " + categorie;
+    document.getElementById("categorie").innerHTML = categorie;
     document.getElementById("text").innerHTML = text;
     document.getElementById("footer").innerHTML = footer;
 }
