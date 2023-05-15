@@ -85,7 +85,7 @@ function reply_click(clicked_id){
           document.getElementById("image-container").appendChild(images);
         }
 
-        document.getElementById("footer").innerHTML = "☞ Fotografie, Bildbearbeitung, Videografie, Bildkomposition <br> ✌︎ In Zusammenarbeit mit " + '<a class="social" href="https://steckler-alex.de" target="_blank">Alex Steckler</a>';
+        document.getElementById("footer").innerHTML = "☞ Fotografie, Bildbearbeitung, Videografie, Bildkomposition <br>" + '<i class="bi bi-person-plus"></i>'  + '<a class="social" href="https://steckler-alex.de" target="_blank"> Alex Steckler</a>';
     }
 
     else if (clicked_id == "klimperkasten") {
@@ -111,7 +111,7 @@ function reply_click(clicked_id){
         // Hier fügst du das div-Element zu deinem HTML-Code hinzu
         document.getElementById("image-container").appendChild(imagesDiv);
 
-        document.getElementById("footer").innerHTML = "☞ Branding, Corporate Design, Flyer, Plakate, Social Media <br>" + '<a href="https://www.instagram.com/klimperkasten_bayrisch_pub" target="_blank">☺ Klimperkasten – Bayrisch Pub</a>';
+        document.getElementById("footer").innerHTML = "☞ Branding, Corporate Design, Flyer, Plakate, Social Media <br>" + '<a class="social" href="https://www.instagram.com/klimperkasten_bayrisch_pub" target="_blank"><i class="bi bi-emoji-smile"></i> Klimperkasten – Bayrisch Pub</a>';
     }
 
     else if (clicked_id == "cardfolio") {
@@ -149,7 +149,7 @@ function reply_click(clicked_id){
         "img/branding_laulo/1.jpg",
         "Branding",
         "Eine mexikanische Bäckerei, die deutsches Brot verkauft? Claro! Das ist Laulo Panadería. Die Brote mit deutschen Namen kommen bei Touristen aus aller Welt, sowie bei Einheimischen muy bien an. ¡El mejor pan de México! Was fehlt sind die richtigen Werbemaßnahmen. Das Logo stand bereits, also kümmerte ich mich um die passende Corporate Identity. Dafür entwickelte ich eine Farbpalette, ein Typografiekonzept und Illustrationen. Diese haben ihren Platz final in Plakaten und Social Media Posts gefunden.",
-        "☞ Corporate Identity, Illustration, Plakat, Social Media <br>" + '<a href="https://www.instagram.com/panaderialaulo" target="_blank">☺ Laulo Panadería</a>'
+        "☞ Corporate Identity, Illustration, Plakat, Social Media <br>" + '<a class="social" href="https://www.instagram.com/panaderialaulo" target="_blank"> <i class="bi bi-emoji-smile"></i> Laulo Panadería</a>'
       );
 
         callImageContainer(6, "img/branding_laulo/");
@@ -162,7 +162,7 @@ function reply_click(clicked_id){
         "img/weltvmorgen/welt_von_morgen.gif",
         "Editorial",
         "Im Kurs „Typografie“ des ersten Semesters meines Zweitstudiums entwickeln, konzipieren und gestalten wir ein Buch zur Zukunft. Was kommt auf uns zu? Wie verstehen wir diese Entwicklungen besser? Welche Meinungen gibt es? Wie sind Lösungen möglich? – Grundlage sind die sogenannten „Megatrends“. Wir arbeiten mit Recherche, unseren eigenen Ideen und Fundstücken. Jede Dreier-Gruppe erarbeitet zwei eigene Kurs-Buch-Kapitel, wobei meine Gruppe die Oberthemen „Globalisierung“ und „Wissenskultur“ behandelt. Jede Gruppe gestaltet ihre eigene Seiten typografisch, grafisch und inhaltlich – am Schluss fügen wir die Seiten zu einem großen Buch zusammen. Hier zu sehen sind die von mir gestalteten Buchseiten.",
-        "☞ Editorial, Buchgestaltung, Typografie"
+        "☞ Editorial, Buchgestaltung, Typografie <br>" +  '<i class="bi bi-person-plus"></i>'  + '<a class="social" href="https://www.instagram.com/puskailer.design/" target="_blank"> Laura Puskailer </a>' + "und" + '<a class="social" href="https://www.instagram.com/julja.mall/" target="_blank"> Julia Mall</a>'
       );
     }
 
@@ -172,7 +172,7 @@ function reply_click(clicked_id){
         "img/bme/bme.jpg",
         "Branding",
         "Eine Modemarke, die sich für Nachhaltigkeit und faire Produktion einsetzt. DIE Modemarke, die DICH different macht! Entstanden ist die Idee und die Umsetzung des Corporate Designs der Modemarke im 4. Semester zusammen mit zwei Kommilitoninnen an der Hochschule Fulda im Modul „Gestaltung in der Praxis“. Ein halbes Semester hatten wir dazu Zeit uns ein Corporate Design für ein Unternehmen unserer Wahl zu gestalten. Dazu inszenierten wir die Modemarke „Be Me“. <br> <br>" + '<a href="https://www.youtube.com/shorts/lXMQsWrlwoU" target="_blank">Der Werbeclip</a>',
-        "☞ Konzept, Logo, Printprodukte <br> ✌︎ In Zusammenarbeit mit " + '<a class="social" href="https://portfolio-melinaschwierzke.webflow.io/" target="_blank">Melina Schwierzke</a>' + " und " + '<a class="social" href="https://www.linkedin.com/in/frederike-barth-027171198/" target="_blank">Frederike Barth</a>'
+        "☞ Konzept, Logo, Printprodukte <br>" + '<i class="bi bi-person-plus"></i>' + '<a class="social" href="https://portfolio-melinaschwierzke.webflow.io/" target="_blank"> Melina Schwierzke</a>' + " und " + '<a class="social" href="https://www.linkedin.com/in/frederike-barth-027171198/" target="_blank">Frederike Barth</a>'
       );
     }
 
