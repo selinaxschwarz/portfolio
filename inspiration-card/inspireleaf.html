@@ -79,17 +79,29 @@
   <!-- <button onclick="changeCard()">Karte wechseln</button> -->
 
   <div id="button-bar" class="flex-row">
-    <div class="modal-open-button" data-target-selector="#dialog-0"></div>
+    <div class="modal-open-button dialog-0" data-target-selector="#dialog-0"></div>
+     <div class="modal-open-button dialog-1" data-target-selector="#dialog-1"></div>
   </div>
   <div id="modal-cover"></div>
 
   <div id="dialog-0" class="hidden modal bg-1">
     <h2 class="modal-h2">Über inspire leaf</h2>
     <br>
-    <p class="modal-p"> Im Konzept & Entwurf Kurs Hyperkontext ist als Projekt ein random-basierter Generator entstanden, der Inspirations(post-)karten auf der Grundlage von naturalistischen Mustern erstellt. Diese Karten sollen als Inspirationsquelle für Designer*innen dienen. Meine Motivation für dieses Projekt ist es ein eigenes Tool zu erschaffen, dass die Kreativität anregt und dem Gestaltenden auf neue interesannte Ideen bringt. </p>
+    <p class="modal-p"> Im Konzept & Entwurf Kurs Hyperkontext ist als Projekt ein random-basierter Generator entstanden, der Inspirations(post-)karten auf der Grundlage von naturalistischen Mustern erstellt. Diese Karten sollen als Inspirationsquelle für Designer*innen dienen. Meine Motivation für dieses Projekt ist es ein eigenes Tool zu erschaffen, dass die Kreativität anregt und dem Gestaltenden auf neue, interesannte Ideen bringt. </p>
     <p class="modal-p">Die Inspiration für dieses Projekt habe ich aus der Natur gezogen. Der Titel der Karten sind lateinische Namen von Grünpflanzen und der grafische Teil der Karten basiert den Stukturen von Pflanzenblättern und natürlichen Farben.</p>
-    <button class="modal-close-button">Close</button>
   </div>
+
+  
+  <div id="dialog-1" class="hidden modal bg-1">
+    <div class="progressbar"></div>
+    <br>
+    <h2 class="modal-h2 save">Deine Inspirationskarte wurde erfolgreich gespeichert. </h2>
+    <br>
+    <p class="modal-p save"> Viel Spaß beim gestalten. Hier kannst du sie herunterladen:</p>
+    <br>
+    <img class="save" src="img/qr_code_praesentation.png" alt="">
+  </div>
+
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
   <script src="js/sketch.js" defer></script>

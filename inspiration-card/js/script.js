@@ -111,8 +111,7 @@ function calculateDate() {
   var formattedMonth = (month < 10) ? '0' + month : month;
   var formattedYear = year.toString().slice(-2);
 
-  // var formattedDate = formattedDay + ' ' + formattedMonth + ' ' + formattedYear;
-  var formattedDate = "15" + ' ' + "07" + ' ' + formattedYear;
+  var formattedDate = formattedDay + ' ' + formattedMonth + ' ' + formattedYear;
   versionDateElement.textContent = formattedDate;
 }
 
@@ -151,24 +150,58 @@ function generateTitle() {
 }
 
 
+/*****************************************************************************************************************
+ *                                           Karte downloaden                                                       *
+ * **************************************************************************************************************/
 
-document.addEventListener("keydown", function(event) {
+document.addEventListener('keydown', function(event) {
+  const targetSelector = document.querySelector('.modal-open-button.dialog-1').getAttribute('data-target-selector');
+  const target = document.querySelector(targetSelector);
+
+  console.log(target.classList.contains('hidden'));
+
   if (event.key === "s" || event.key === "Enter") {
-    downloadContent();
+    if (target.classList.contains('hidden')) {
+      downloadContent();
+      target.classList.remove('hidden');
+      setModalCoverState(true);
+    } else {
+      target.classList.add('hidden');
+      setModalCoverState(false);
+    }
   }
 });
+
+
 
 function downloadContent() {
   var container = document.getElementById("para");
   html2canvas(container, { allowTaint: true }).then(function(canvas) {
     var link = document.createElement("a");
     document.body.appendChild(link);
-    link.download = "inspireleaf.png";
+
+    // Aktuelles Datum und Uhrzeit abrufen
+    var currentDate = new Date();
+    var year = currentDate.getFullYear();
+    var month = ("0" + (currentDate.getMonth() + 1)).slice(-2);
+    var day = ("0" + currentDate.getDate()).slice(-2);
+    var hours = ("0" + currentDate.getHours()).slice(-2);
+    var minutes = ("0" + currentDate.getMinutes()).slice(-2);
+    var seconds = ("0" + currentDate.getSeconds()).slice(-2);
+    
+    var fileName = "inspireleaf_" + year + month + day + "_" + hours + minutes + seconds + ".png"; // Neuer Dateiname mit Datum und Uhrzeit
+    
+    link.download = fileName;
     link.href = canvas.toDataURL();
     link.click();
   });
 }
 
+
+
+/*****************************************************************************************************************
+ *                                           weitere Tastensteuerung                                                        *
+ * **************************************************************************************************************/
 
 function keyTyped() {
   if (key === "c" || key === "9") {
@@ -194,6 +227,8 @@ function keyTyped() {
    else if (key === "r" || key === "0") {
     minYchange = 1;
     maxYchange = 10;
+    
+    
     const card = document.getElementById("para");
     const structure = document.getElementById("structure");
     card.classList.add("crumpled-card");
@@ -212,6 +247,7 @@ function keyTyped() {
     }, 1000);
     // refresh page
     // window.location.reload();
+    version.textContent = "N." + generateVersionNumber().toString().padStart(3, "0");
   }
   else if (key == "3") {
     drawPattern(false, true);
@@ -360,7 +396,11 @@ window.addEventListener("load", function() {
 
 
 
-/* PopUp Fenster */
+
+/*****************************************************************************************************************
+ *                                          Pop Up Fenster                                            *
+ * **************************************************************************************************************/
+
 
 // Open modal
 document.addEventListener('keydown', function(event) {
