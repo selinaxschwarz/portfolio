@@ -88,6 +88,35 @@ function reply_click(clicked_id){
         document.getElementById("footer").innerHTML = "☞ Fotografie, Bildbearbeitung, Videografie, Bildkomposition <br>" + '<i class="bi bi-person-plus"></i>'  + '<a class="social" href="https://steckler-alex.de" target="_blank"> Alex Steckler</a>';
     }
 
+
+    else if (clicked_id == "interpose") {
+      document.getElementById("header").innerHTML = "interpose – Symposium";
+      document.getElementById("image").src = "img/interpose/header.jpg";
+      document.getElementById("categorie").innerHTML = "Layout, UX/ UI";
+      document.getElementById("text").innerHTML = "Im Rahmen meines vierten Semesters habe ich das Modul DI (Designinitiative) belegt und aktiv am Modul “Interpose: How To Symposium”, teilgenommen. Ich habe  zwei der vier Postkartenmotive gestaltet und bin für die Konzeption und Gestaltung der Webseite verantwortlich, die sich derzeit noch in Bearbeitung befindet." + "<br>" +  '<a class="social" href="https://kd.hs-mainz.de/interpose" target="_blank"> → Zur Webseite</a>' + "<br>" + "<br>" +
+      "Interpose ist eine Veranstaltung, die sich mit der Gestaltung von Kommunikation aus interdisziplinärer Perspektive befasst. Das Symposium findet am 18. und 19. Oktober 2023 im LUX-Pavillon der Hochschule Mainz statt und bietet eine Plattform, um Kommunikationsdesign aus der Perspektive von verschiedenen Disziplinen zu betrachten. Es werden Expert*innen aus verschiedenen Bereichen wie Philosophie, Kulturwissenschaften, Journalismus, Kunst, Literatur, kultureller Vermittlung und Design eingeladen, um die Logiken und Zwänge von Verständigungsprozessen zu analysieren, zu sortieren und Design in diesem Kontext (neu) zu verorten.";
+      
+      // Hier wird ein neues div-Element erstellt, in dem alle Bilder angezeigt werden sollen
+      var imagesDiv = document.createElement("div");
+      imagesDiv.id = "images-pub";
+    
+      // Hier definierst du den Pfad zum Ordner mit den Bildern
+      var imagesPath = "img/interpose/";
+    
+      // Hier fügst du alle Bilder im Ordner zu dem div-Element hinzu
+      for (var i = 1; i <= 6; i++) {
+        var image = document.createElement("img");
+        image.src = imagesPath + i + ".jpg";
+        imagesDiv.appendChild(image);
+      }
+    
+      // Hier fügst du das div-Element zu deinem HTML-Code hinzu
+      document.getElementById("image-container").appendChild(imagesDiv);
+
+
+      document.getElementById("footer").innerHTML = "☞ Postkartendesignentwicklung, Konzeption, Webdesign <br>" + '<i class="bi bi-person-plus"></i>'  + '<a class="social" href="https://www.linkedin.com/in/anna-kr%C3%A4mer-516231271?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BWzBGRyoNRfW97fh0UX2CCQ%3D%3D" target="_blank"> Anna Krämer</a>';
+  }
+
     else if (clicked_id == "klimperkasten") {
         document.getElementById("header").innerHTML = "Klimperkasten - Bayrisch Pub";
         document.getElementById("image").src = "img/branding_pub/header.jpg";
