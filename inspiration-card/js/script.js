@@ -19,9 +19,10 @@ function init() {
   cardTitle.textContent = title;
 
   const version = document.querySelector("#version h5");
-  version.textContent = "N." + generateVersionNumber().toString().padStart(3, "0");
+  
 
   calculateDate(); // Datum berechnen und anzeigen
+  version.textContent = "N." + generateVersionNumber().toString().padStart(3, "0");
 }
 
 function changeCard() {
