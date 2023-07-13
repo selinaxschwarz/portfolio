@@ -124,8 +124,8 @@ function reply_click(clicked_id){
     document.getElementById("categorie").innerHTML = "Webdesign";
     document.getElementById("text").innerHTML = "Im Konzept & Entwurf Kurs „Hyperkontext“ ist als Projekt ein random-basierter Generator entstanden, der Inspirations(post-)karten auf der Grundlage von naturalistischen Mustern erstellt. Diese Karten sollen als Inspirationsquelle für Designer*innen dienen. Meine Motivation für dieses Projekt ist es ein eigenes Tool zu erschaffen, dass die Kreativität anregt und den Gestaltenden auf neue, interesannte Ideen bringt." + "<br>" + "<br>" +
     
-    "Die Inspiration für dieses Projekt habe ich aus der Natur gezogen. Der Titel der Karten sind lateinische Namen von Grünpflanzen und der grafische Teil der Karten basiert den Stukturen von Pflanzenblättern und natürlichen Farben.";
-    
+    "Die Inspiration für dieses Projekt habe ich aus der Natur gezogen. Der Titel der Karten sind lateinische Namen von Grünpflanzen und der grafische Teil der Karten basiert den Stukturen von Pflanzenblättern und natürlichen Farben."
+    + "<br>" + "<br>" + "<a class='social' href='https://selinaschwarz.me/inspiration-card/inspireleaf.html' target='_blank'> → Zum Webtool </a>";
     // Hier wird ein neues div-Element erstellt, in dem alle Bilder angezeigt werden sollen
     var imagesDiv = document.createElement("div");
     imagesDiv.id = "images-pub";
