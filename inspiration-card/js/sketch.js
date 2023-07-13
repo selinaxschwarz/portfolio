@@ -29,6 +29,7 @@ let y6Array = [];
 let rotateArray = [];
 let rotateArrayIndex = [];
 let index = 0;
+let sketchContainer;
 
 function preload() {
   table = loadTable("colors.csv", "csv", "header");
@@ -38,7 +39,7 @@ function setup() {
   changeCard();
   randomFont();
   let colors = [15];
-  pixelDensity(10.0);
+  // pixelDensity(2);
     sketchContainer = select('#structure'); // Finde das div-Element mit der ID 'sketchContainer'
     
     let canv = createCanvas(sketchContainer.width, sketchContainer.height); // Verwende die Breite und Höhe des div-Elements
@@ -46,13 +47,14 @@ function setup() {
 
   // canv.mousePressed(setup);
   
-
-  drawPattern(false, false);
   
-  const canva = document.getElementById("defaultCanvas0");
-  // canva.classList.add("w100", "h100")
-  canva.style.width = "100%";
-  canva.style.height = "100%"; 
+  
+  noLoop();
+}
+
+function draw() {
+  resizeCanvas(sketchContainer.width, sketchContainer.height);
+  drawPattern(false, false);
 }
 
 function drawPattern(zoomChange, colorChange) {
@@ -232,6 +234,14 @@ function drawPattern(zoomChange, colorChange) {
       rotateIndex++;
     }
   }
+  const canva = document.getElementById("defaultCanvas0");
+  // canva.classList.add("w100", "h100")
+  canva.style.width = "100%";
+  canva.style.height = "100%"; 
+
+  const sruct = document.getElementById("structure");
+  sruct.style.width = "100%";
+  sruct.style.height = "100%"; 
 }
 
 

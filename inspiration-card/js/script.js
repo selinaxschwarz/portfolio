@@ -40,8 +40,6 @@ function changeCard() {
     }
   }
   card.classList.add(arr[randomNum]);
-  
-  
 
   const palette = document.getElementById("palette");
 
@@ -240,7 +238,7 @@ function keyTyped() {
       card.classList.remove("crumpled-card");
       //lade eine neue Karte
       changeCard();
-      setup();
+      redraw();
       //structure.innerHTML = window.reload();
       // Ändere die Schriftart
       randomFont();

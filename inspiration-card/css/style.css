@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Capriola&family=Hahmlet&family=Hanken+Grotesk&family=Jura&family=Lato&family=Libre+Baskerville&family=Mulish&family=PT+Sans&family=Pacifico&family=Pathway+Gothic+One&family=Varela&display=swap');
 
+@font-face {
+  font-family: 'Hahmlet';
+  font-weight: 500;
+  src: url(../fonts/Capriola,Hahmlet,Hanken_Grotesk,Jura,Lato,etc/Hahmlet/static/Hahmlet-Medium.ttf);
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
