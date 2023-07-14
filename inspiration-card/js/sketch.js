@@ -96,7 +96,6 @@ function drawPattern(zoomChange, colorChange) {
         y5 = y1,
         y6 = y1;
       let rotLayer = random(359); // layer rotation
-      console.log(rotLayer);
       rotateArray.push(rotLayer);
       let rotThisStripe = 0;
       // keep going until all the lines are at the bottom
@@ -165,7 +164,6 @@ function drawPattern(zoomChange, colorChange) {
       }
     }
   } else {
-    console.log("colorChange");
     let y1Length = y1Array.length;
 
     let rotateIndex = 0;
@@ -217,7 +215,6 @@ function drawPattern(zoomChange, colorChange) {
       translate(width, height);
       rotThisStripe += rotStripe; // rotating after each stripe
       rotate(rotThisStripe + rotateArray[angleSwitchIndex - 1]);
-      console.log(rotateArray[angleSwitchIndex -1]);
       let xStart = -width / 2;
       beginShape();
       curveVertex(xStart - 300, height / 2 + 500);

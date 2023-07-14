@@ -1,18 +1,26 @@
 let arr = ["flex-row", "flex-row-reverse", "flex-column", "flex-column-reverse"];
 let randFont;
 
+let fullwindowElement;
+
 window.onload = function() {
   init();
   calculateDate();
 };
 
 function init() {
+
+  fullwindowElement = document.getElementById("fullwindow");
+  console.log(fullwindowElement);
+  fullwindowElement.innerHTML = "kein Vollbild";
+
   const col1 = document.getElementById("col1");
   const col2 = document.getElementById("col2");
   const col3 = document.getElementById("col3");
   const col4 = document.getElementById("col4");
   const col5 = document.getElementById("col5");
   const layers = document.getElementById("layers");
+
 
   const cardTitle = document.getElementById("cardTitle");
   const title = generateTitle(); // Funktion zum Generieren des Titels
@@ -23,6 +31,7 @@ function init() {
 
   calculateDate(); // Datum berechnen und anzeigen
   version.textContent = "N." + generateVersionNumber().toString().padStart(3, "0");
+  
 }
 
 function changeCard() {
@@ -307,6 +316,8 @@ document.addEventListener('DOMContentLoaded', function (event) {
 });
 
 function toggleFullScreen() {
+
+  
   var element = document.documentElement; // Das gesamte Dokument wird in den Vollbildmodus versetzt
   if (!document.fullscreenElement && !document.webkitFullscreenElement && !document.msFullscreenElement) {
     var savedBackground = document.documentElement.style.backgroundColor; // Hintergrundfarbe speichern
@@ -340,7 +351,10 @@ function toggleFullScreen() {
         console.log('Error attempting to enable full-screen mode:', error.message);
       });
     }
+
+    fullscreenElement.innerHTML = "Vollbild";
   } else {
+    /*
     if (document.exitFullscreen) {
       document.exitFullscreen();
     } else if (document.msExitFullscreen) {
@@ -352,6 +366,8 @@ function toggleFullScreen() {
     // Hintergrundfarbe nach dem Verlassen des Vollbildmodus wiederherstellen
     var savedBackground = localStorage.getItem("background");
     document.documentElement.style.backgroundColor = savedBackground;
+    fullscreenElement.innerHTML = "kein Vollbild";
+    */
   }
 }
 
@@ -407,7 +423,7 @@ document.addEventListener('keydown', function(event) {
     const targetSelector = document.querySelector('.modal-open-button').getAttribute('data-target-selector');
     const target = document.querySelector(targetSelector);
 
-    console.log(target.classList.contains('hidden'));
+    //console.log(target.classList.contains('hidden'));
 
     if (target.classList.contains('hidden') && (event.key === "i" || event.key === "-")) {
       target.classList.remove('hidden');
