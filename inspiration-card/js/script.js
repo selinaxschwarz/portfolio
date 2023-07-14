@@ -14,6 +14,8 @@ function init() {
   console.log(fullwindowElement);
   fullwindowElement.innerHTML = "kein Vollbild";
 
+  calculateDate();
+
   const col1 = document.getElementById("col1");
   const col2 = document.getElementById("col2");
   const col3 = document.getElementById("col3");
@@ -29,7 +31,7 @@ function init() {
   const version = document.querySelector("#version h5");
   
 
-  calculateDate(); // Datum berechnen und anzeigen
+   // Datum berechnen und anzeigen
   version.textContent = "N." + generateVersionNumber().toString().padStart(3, "0");
   
 }
