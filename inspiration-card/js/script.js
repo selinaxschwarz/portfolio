@@ -9,11 +9,6 @@ window.onload = function() {
 };
 
 function init() {
-
-  fullwindowElement = document.getElementById("fullwindow");
-  console.log(fullwindowElement);
-  fullwindowElement.innerHTML = "kein Vollbild";
-
   calculateDate();
 
   const col1 = document.getElementById("col1");
@@ -111,6 +106,7 @@ function changeColor(colorarray, lay, lineWidth, waveHeight) {
 
 //Datum wird berechnet
 function calculateDate() {
+  console.log("calculateDate");
   var versionDateElement = document.getElementById("versionDate");
   var currentDate = new Date();
   var year = currentDate.getFullYear();
