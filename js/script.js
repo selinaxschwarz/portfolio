@@ -9,7 +9,7 @@ window.onload = function() {
       var imagesPath = "img/start/";
     
       // Hier fügst du alle Bilder im Ordner zu dem div-Element hinzu
-      for (var i = 1; i <= 4; i++) {
+      for (var i = 1; i <= 5; i++) {
         var image = document.createElement("img");
         image.src = imagesPath + i + ".jpg";
         image.classList.add("pb-3");
@@ -90,8 +90,8 @@ function reply_click(clicked_id){
 
 
     else if (clicked_id == "interpose") {
-      document.getElementById("header").innerHTML = "interpose – Symposium";
-      document.getElementById("image").src = "img/interpose/header.jpg";
+      document.getElementById("header").innerHTML = "interposed – Symposium";
+      document.getElementById("image").src = "img/interpose/header.jpeg";
       document.getElementById("categorie").innerHTML = "Layout, UX/ UI";
       document.getElementById("text").innerHTML = "Im Rahmen meines vierten Semesters habe ich das Modul DI (Designinitiative) belegt und aktiv am Modul „Interpose: How To Symposium“, teilgenommen. Ich habe  zwei der vier Postkartenmotive gestaltet und bin für die Konzeption und Gestaltung der Webseite verantwortlich, die sich derzeit noch in Bearbeitung befindet." + "<br>" +  '<a class="social" href="https://kd.hs-mainz.de/interpose" target="_blank"> → Zur Webseite</a>' + "<br>" + "<br>" +
       "Interpose ist eine Veranstaltung, die sich mit der Gestaltung von Kommunikation aus interdisziplinärer Perspektive befasst. Das Symposium findet am 18. und 19. Oktober 2023 im LUX-Pavillon der Hochschule Mainz statt und bietet eine Plattform, um Kommunikationsdesign aus der Perspektive von verschiedenen Disziplinen zu betrachten. Es werden Expert*innen aus verschiedenen Bereichen wie Philosophie, Kulturwissenschaften, Journalismus, Kunst, Literatur, kultureller Vermittlung und Design eingeladen, um die Logiken und Zwänge von Verständigungsprozessen zu analysieren, zu sortieren und Design in diesem Kontext (neu) zu verorten.";
@@ -136,7 +136,7 @@ function reply_click(clicked_id){
     // Hier fügst du alle Bilder im Ordner zu dem div-Element hinzu
     for (var i = 1; i <= 6; i++) {
       var image = document.createElement("img");
-      image.src = imagesPath + i + ".jpg";
+      image.src = imagesPath + i + ".jpeg";
       imagesDiv.appendChild(image);
     }
   
@@ -253,7 +253,6 @@ function reply_click(clicked_id){
         "",
         "☞ UX/ UI Design, Fotografie, Branding, Konzeption & Editorial",
         "Komplexe Ideen in kreative Lösungen umwandeln ist meine Leidenschaft als angehende Designerin. Ich bin Selina und studiere Kommunikationsdesign im vierten Semester in Mainz. Im Studium kann ich meiner kreativen Ader in verschiedenen Bereichen wie UX/UI, Fotografie, Branding, Konzeption und Editorial Design nachgehen. Durch die Kombination meiner kreativen Fähigkeiten mit meinem technischen Wissen und meinen Erfahrungen, bin ich in der Lage, wirkungsvolle Designs zu schaffen. In meinem Portfolio ist eine Auswahl meiner Arbeiten, die ich im Rahmen meines Studiums und auch außerhalb davon erstellt habe, zu finden. <br> <br> Kontakt: " + '<a href="mailto:hej@selinaschwarz.me?subject=Anfrage/%20Feedback/%20Fragen" target="_blank">hej@selinaschwarz.me</a>',
-        "<br><br><br><br> Impressum <br> Angaben gemäß § 5 TMG <br> <br> Selina Schwarz <br> Bretzenheimer Straße 23 <br> 55128 Mainz <br><br> Kontakt <br> E-Mail: " + '<a class="social" href="mailto:hej@selinaschwarz.me?subject=Anfrage/%20Feedback/%20Fragen" target="_blank">hej@selinaschwarz.me</a>' + "<br> <br> HAFTUNGSHINWEIS: <br> Trotz sorgfältiger inhaltlicher Kontrolle wird keine Haftung für die Inhalte externer Links übernommen. Für den Inhalt der verlinkten Seiten sind ausschließlich deren Betreiber verantwortlich."
       );
 
       
