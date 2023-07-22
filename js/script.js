@@ -106,7 +106,7 @@ function reply_click(clicked_id){
       // Hier fügst du alle Bilder im Ordner zu dem div-Element hinzu
       for (var i = 1; i <= 6; i++) {
         var image = document.createElement("img");
-        image.src = imagesPath + i + ".jpg";
+        image.src = imagesPath + i + ".jpeg";
         imagesDiv.appendChild(image);
       }
     
@@ -116,6 +116,32 @@ function reply_click(clicked_id){
 
       document.getElementById("footer").innerHTML = "☞ Postkartendesignentwicklung, Konzeption, Webdesign <br>" + '<i class="bi bi-person-plus"></i>'  + '<a class="social" href="https://www.linkedin.com/in/anna-kr%C3%A4mer-516231271?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BWzBGRyoNRfW97fh0UX2CCQ%3D%3D" target="_blank"> Anna Krämer</a>';
   }
+
+  else if (clicked_id == "soundscapes") {
+    document.getElementById("header").innerHTML = "SoundScapes – KI Modell Sound2Image";
+    document.getElementById("image").src = "img/soundscapes/header.jpeg";
+    document.getElementById("categorie").innerHTML = "Interface Design";
+    document.getElementById("text").innerHTML = "Im 4. Semester entsand innerhalb des Kurses „KI und Design: Walking in latent Space“ ein Sound to Image KI Modell. Die Idee hinter dem Audio-to-Image Modell „SoundScapes“ entstand aus dem Wunsch heraus, die immaterielle Natur von Audio zu erfassen und in visuelle Darstellungen umzuwandeln. Das Ziel dabei ist es, visuell abstrakte Stimmungsbilder aus Sound zu generieren und somit eine neue Ebene der Wahrnehmung zu schaffen. Der explorative Charakter des Interfaces soll dabei im Vordergrund stehen.";
+    // Hier wird ein neues div-Element erstellt, in dem alle Bilder angezeigt werden sollen
+    var imagesDiv = document.createElement("div");
+    imagesDiv.id = "images-pub";
+  
+    // Hier definierst du den Pfad zum Ordner mit den Bildern
+    var imagesPath = "img/soundscapes/";
+  
+    // Hier fügst du alle Bilder im Ordner zu dem div-Element hinzu
+    for (var i = 1; i <= 5; i++) {
+      var image = document.createElement("img");
+      image.src = imagesPath + i + ".jpeg";
+      imagesDiv.appendChild(image);
+    }
+  
+    // Hier fügst du das div-Element zu deinem HTML-Code hinzu
+    document.getElementById("image-container").appendChild(imagesDiv);
+
+
+    document.getElementById("footer").innerHTML = "☞ Konzeption, Prototyping, Interfacedesign, Webdesign, Webprogrammierung";
+}
 
 
   else if (clicked_id == "inspireleaf") {
